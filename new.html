@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+/*html 속성*/
+	html, body {
+	    height: 100%;
+	}
+	html {
+	    font-family: sans-serif;
+	    -ms-text-size-adjust: 100%;
+	    -webkit-text-size-adjust: 100%;
+	}
+	*, *:after, *:before {
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    margin: 0;
+	    padding: 0;
+	}
+	html {
+	    display: block;
+	}
+
+
+/*//////head 속성/////*/
+	.bnr_header {
+	    position: relative;
+	    min-width: 1050px;
+	    text-align: center;
+	    line-height: 42px;
+	    font-size: 14px;
+	}
+	.bnr_header a {
+	    display: block;
+	    height: 42px;
+	    background-color: #5f0080;
+	    color: #fff;
+	    text-decoration:none;
+	}
+	b, strong {
+	    font-weight: 700;
+	}
+	.bnr_header .bnr_arr {
+	    display: inline-block;
+	    width: 42px;
+	    height: 42px;
+	    vertical-align: top;
+	}
+	.bnr_header .bnr_top {
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	}
+	.bnr_header .inner_top_close {
+	    position: relative;
+	    width: 1050px;
+	    height: 100%;
+	    margin: 0 auto;
+	}
+	.bnr_header .btn_top_bnr {
+	    background-image: url(https://res.kurly.com/pc/ico/1908/ico_close_fff_42x42.png);
+	    width: 42px;
+	    height: 42px;
+	    background-color: transparent;
+	    border: 0;
+	    text-indent: -9999px;
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    right: -15px;
+	}
+	button {
+	    outline: none;
+	}
+/*head-#userMenu*/
+	#userMenu {
+	    width: 1050px;
+	    margin: 0 auto;
+	}
+	#userMenu .list_menu {
+	    float: right;
+	}
+	#userMenu * {
+	    font-family: noto sans;
+	    font-weight: 400;
+	    letter-spacing: -.3px;
+	}
+	ol, ul {
+	    list-style-type: none;
+	}
+	#userMenu .menu {
+	    position: relative;
+	    z-index: 400;
+	    float: left;
+	}
+	#userMenu .menu_join .link_menu {
+	    color: #5f0080;
+	}
+	#userMenu .none_sub .link_menu {
+	    padding-right: 10px;
+	}
+	#userMenu .link_menu {
+	    float: left;
+	    height: 37px;
+	    padding: 0 22px 0 10px;
+	    color: #333;
+	    line-height: 35px;
+	    white-space: nowrap;
+	}
+	#userMenu .menu:after {
+	    content: "";
+	    float: right;
+	    width: 1px;
+	    height: 13px;
+	    margin-top: 12px;
+	    background-color: #d8d8d8;
+	}
+	#userMenu .menu:before {
+	    content: "";
+	    position: absolute;
+	    right: 11px;
+	    top: 16px;
+	    width: 8px;
+	    height: 5px;
+	    background: url(https://res.kurly.com/pc/ico/1908/ico_down_8x5.png) no-repeat 0 0;
+	}
+	#userMenu .lst .sub {
+	    left: auto;
+	    right: 0;
+	}
+	#userMenu .sub {
+	    display: none;
+	    position: absolute;
+	    left: 0;
+	    top: 34px;
+	    width: 102px;
+	    padding: 3px 9px;
+	    border: 1px solid #ddd;
+	    background-color: #fff;
+	}
+	#userMenu .sub a {
+	    font-size: 12px;
+	    color: #404040;
+	    line-height: 24px;
+	    white-space: nowrap;
+	}
+	#userMenu:after {
+	    content: "";
+	    display: block;
+	    overflow: hidden;
+	    width: 100%;
+	    height: 0;
+	    font-size: 0;
+	    text-indent: -9999px;
+	}
+/*head-headerLogo*/
+	#headerLogo {
+	    position: relative;
+	    width: 1050px;
+	    height: 63px;
+	    margin: 0 auto;
+	}
+	.layout-wrapper {
+	    position: relative;
+	    width: 1050px;
+	    height: 100%;
+	    margin: 0 auto;
+	}
+	#headerLogo .logo {
+	    position: absolute;
+	    left: 50%;
+	    bottom: 6px;
+	    width: 200px;
+	    height: 79px;
+	    margin-left: -100px;
+	}
+	h1 {
+	    font-size: 2em;
+	}
+	h1 {
+	    display: block;
+	    font-size: 2em;
+	    margin-block-start: 0.67em;
+	    margin-block-end: 0.67em;
+	    margin-inline-start: 0px;
+	    margin-inline-end: 0px;
+	    font-weight: bold;
+	}
+	#headerLogo .logo #gnbLogoContainer {
+	    margin: 0 auto;
+	}
+	#headerLogo .logo img {
+	    display: block;
+	    width: 103px;
+	    height: 79px;
+	    margin: 0 auto;
+	}
+	#headerLogo .bnr_delivery {
+	    position: absolute;
+	    left: 17px;
+	    top: -28px;
+	    margin: auto;
+	    height: 22px;
+	}
+	#headerLogo .bnr_delivery img {
+	    width: 163px;
+	    height: 22px;
+	}
+
+
+/*gnb 속성 모음*/
+	#headerLogo{position:relative;width:1050px;height:63px;margin:0 auto}
+	#headerLogo .bnr_delivery{position:absolute;left:17px;top:-28px;margin:auto;height:22px}
+	#headerLogo .bnr_delivery img{width:163px;height:22px}
+	#headerLogo .logo{position:absolute;left:50%;bottom:6px;width:200px;height:79px;margin-left:-100px}
+	#headerLogo .logo img{display:block;width:103px;height:79px;margin:0 auto}
+	#headerLogo .logo #gnbLogoContainer {margin:0 auto}
+	#gnb.gnb_stop{position:fixed;z-index:300;left:0;top:0;width:100%}
+	#gnb .gnb_kurly{position:relative;z-index:300;min-width:1050px;background-color:#fff;font-family:'Noto Sans';letter-spacing:-0.3px}
+	#gnb .gnb_kurly:after{content:"";position:absolute;z-index:299;left:0;top:56px;width:100%;height:9px;background:url	(https://res.kurly.com/pc/service/common/1902/bg_1x9.png) repeat-x 0 100%}
+	#gnb .inner_gnbkurly{position:relative;width:1050px;height:56px;margin:0 auto}
+/* gnb-검색창 */
+	#gnb .gnb_search{position:absolute;right:108px;top:10px;width:238px}
+	#gnb .gnb_search .inp_search{width:238px;height:36px;padding:0 50px 0 20px;border:1px solid #f7f7f6;border-radius:18px;background-color:#f7f7f7;font-family: 	'Noto Sans';font-weight:400;font-size:12px;color:#666;line-height:16px;outline:none}
+	#gnb .gnb_search .inp_search.focus{background-color:#fff;color:#333}
+	#gnb .gnb_search .btn_search{position:absolute;right:10px;top:3px;width:30px;height:30px}
+/* 장바구니 */
+	#gnb .cart_count{position:absolute;right:-6px;top:10px}
+	#gnb .cart_count .inner_cartcount{text-align:center;font-weight:400}
+	#gnb .cart_count .btn_cart{display:block;width:36px;height:36px;background:url(https://res.kurly.com/pc/service/common/2011/ico_cart.svg) no-repeat 50% 50%}
+	#gnb .cart_count .btn_cart:hover{background:url(https://res.kurly.com/pc/service/common/2011/ico_cart_on.svg?v=1) no-repeat 50% 50%}
+	#gnb .cart_count .num{display:none;position:absolute;left:19px;top:-1px;min-width:20px;height:20px;padding:0 5px;border:2px solid #fff;border-radius:10px;background-color:#5f0080;font-size:9px;color:#fff;line-height:15px;text-align:center;white-space:nowrap}
+	#gnb .cart_count img{display:block;width:36px;height:36px;margin:0 auto}
+	#gnb .cart_count .msg_cart{display:none;position:absolute;right:-7px;top:61px;width:348px;border:1px solid #ddd;background-color:#fff;/* opacity:0; */}
+	#gnb .cart_count .inner_msgcart{display:block;overflow:hidden;padding:20px 0 20px 20px}
+	#gnb .cart_count .msg_cart .thumb{float:left;width:46px;height:60px}
+	#gnb .cart_count .msg_cart .desc{float:left;width:260px;padding:8px 0 0 20px;font-weight:700;font-size:14px;line-height:21px}
+	#gnb .cart_count .msg_cart .desc.add{padding-top:0;margin-top:-5px;}
+	#gnb .cart_count .msg_cart .tit{display:block;overflow:hidden;width:100%;color:#999;white-space:nowrap;text-overflow:ellipsis}
+	#gnb .cart_count .msg_cart .name{overflow:hidden;float:left;max-width:178px;text-overflow:ellipsis}
+	#gnb .cart_count .msg_cart .txt{display:block;padding-top:3px;color:#333}
+	#gnb .cart_count .msg_cart .point{position:absolute;right:13px;top:-14px;width:20px;height:14px;background:url(https://res.kurly.com/pc/ico/1903/ico_layer_point.png) no-repeat 0 0}
+	#gnb .cart_count .msg_cart .repeat{display:none}
+	#gnb .cart_count .msg_cart .add .repeat{display:block}
+/* gnb-GNB메인 */
+	#gnb .gnb_main{overflow:hidden;width:1050px;margin:0 auto}
+	#gnb .gnb_main .gnb{float:left;width:100%}
+	#gnb .gnb_main .gnb li{float:left}
+	#gnb .gnb_main .gnb .lst{background:none}
+	#gnb .gnb_main .gnb a{overflow:hidden;float:left;width:129px;height:55px;padding:16px 0 0;font-size:16px;color:#333;line-height:20px;text-align:center}
+	#gnb .gnb_main .gnb a .txt{font-weight:700}
+	#gnb .gnb_main .gnb a:hover,
+	#gnb .gnb_main .gnb a.on{font-weight:700;color:#5f0080}
+	#gnb .gnb_main .gnb a:hover .txt{border-bottom:1px solid #5f0080}
+	#gnb .gnb_main .menu1 a{width:168px;padding-left:19px}
+	#gnb .gnb_main .menu1 .ico{float:left;width:16px;height:14px;margin:4px 14px 0 0;background:url(https://res.kurly.com/pc/service/common/1908/ico_gnb_all_off.png) no-repeat}
+	#gnb .gnb_main .menu1 a.on .ico,
+	#gnb .gnb_main .menu1 a:hover .ico{background:url(https://res.kurly.com/pc/service/common/1908/ico_gnb_all.png) no-repeat 0 0}
+	#gnb .gnb_main .menu1 a.on .txt,
+	#gnb .gnb_main .menu1 a:hover .txt,
+	#gnb .gnb_main .menu1 .txt{float:left;font-weight:700;border-bottom:0}
+/* GNB서브 */
+	#gnb .gnb_sub{display:none;overflow:hidden;position:absolute;z-index:301;left:0;top:55px;width:213px;padding-top:1px}
+	#gnb .gnb_sub .inner_sub{width:100%;border:1px solid #ddd;background:url(https://res.kurly.com/pc/service/common/1908/bg_gnb_sub_v3.png) repeat-y 0 0}
+	#gnb .size_over{overflow-x:hidden;overflow-y:auto}
+	#gnb .gnb_sub .gnb_menu{width:219px}
+	#gnb .gnb_sub .gnb_menu li{width:100%;text-align:left}
+	#gnb .gnb_sub .gnb_menu li:first-child{padding-top:0}
+	#gnb .gnb_sub .menu{display:block;overflow:hidden;width:100%;height:40px;padding:8px 0 0 14px;cursor:pointer}
+	#gnb .gnb_sub .gnb_menu li:first-child .menu{height:39px;padding-top:7px}
+	#gnb .gnb_sub .current .menu{background:#f7f7f7}
+	#gnb .gnb_sub .current .txt,
+	#gnb .gnb_sub .menu.on.off:hover .txt,
+	#gnb .gnb_sub .menu.on .txt{font-weight:700;color:#5f0080}
+	#gnb .gnb_sub .ico{float:left;width:24px;height:24px}
+	#gnb .gnb_sub .ico img{width:24px;height:24px}
+	#gnb .gnb_sub .ico .ico_off{display:block}
+	#gnb .gnb_sub .ico .ico_on{display:none}
+	#gnb .gnb_sub .current .ico_off,
+	#gnb .gnb_sub .menu.on .ico_off,
+	#gnb .gnb_sub .menu:hover .ico_off{display:none}
+	#gnb .gnb_sub .current .ico_on,
+	#gnb .gnb_sub .menu.on .ico_on,
+	#gnb .gnb_sub .menu:hover .ico_on{display:block}
+	#gnb .gnb_sub .ico_arrow{display:none;float:right;width:16px;height:17px;padding:6px 9px 0 0}
+	#gnb .gnb_sub .ico_arrow img{width:7px;height:11px}
+	#gnb .gnb_sub .current .ico_arrow{display:block}
+	#gnb .gnb_sub .txt{float:left;padding:0 4px 0 10px;font-weight:400;font-size:14px;color:#333;line-height:22px;white-space:nowrap}
+	#gnb .gnb_sub .ico_new{overflow:hidden;float:left;width:14px;height:14px;margin-top:5px;background-position:50% 50%;background-repeat:no-repeat;background-size:14px 14px;font-size:0;line-height:0;text-indent:-9999px}
+	#gnb .gnb_sub .sub_menu{position:absolute;z-index:0;left:200px;top:0;width:248px;height:100%;padding:0 0 0 20px;background:url(https://res.kurly.com/images/common/bg_1_1.gif) repeat 0 0;opacity:0;transition:opacity 0.2s}
+	#gnb .gnb_sub .current .sub_menu{z-index:1;opacity:1;transition:opacity 0.5s}
+	#gnb .gnb_sub .sub_menu li:first-child{padding-top:11px}
+	#gnb .gnb_sub .sub_menu .sub{display:block;overflow:hidden;height:40px;padding-left:20px;font-size:14px;color:#333;line-height:18px;cursor:pointer}
+	#gnb .gnb_sub .sub_menu .sub:hover .name{border-bottom:1px solid #5f0080;font-weight:700;color:#5f0080}
+	#gnb .gnb_sub .sub_menu .sub.on{font-weight:700;color:#5f0080}
+	#gnb .gnb_sub .recommend{overflow:hidden;width:529px;padding:21px 0 0 40px}
+	#gnb .gnb_sub .recommend li{float:left;width:120px;height:130px;padding:0 10px 0 0}
+	#gnb .gnb_sub .recommend li:first-child{padding-top:0}
+	#gnb .gnb_sub .recommend .sub{display:block;overflow:hidden;width:120px;height:130px;padding:0;cursor:pointer}
+	#gnb .gnb_sub .recommend .thumb{display:block;width:110px;height:83.4px;margin-bottom:8px;background-position:50% 50%;background-repeat:no-repeat;background-size:cover}
+	#gnb .gnb_sub .recommend .thumb img{width:110px;height:84px}
+	#gnb .gnb_sub .recommend .name{font-size:14px;line-height:18px}
+	#gnb .btn_location{overflow:hidden;position:absolute;right:52px;top:10px;width:36px;height:36px;border:0 none;background:url(https://res.kurly.com/pc/ico/2008/ico_delivery_setting_done.svg) no-repeat 50% 50%;font-size:0;text-indent:-9999px}
+	#gnb .btn_location.on{background-image:url(https://res.kurly.com/pc/ico/2008/ico_delivery_setting.svg?ver=1)}
+	#gnb .layer_location{display:none;position:absolute;z-index:300;right:41px;top:56px;width:308px;padding:20px 18px 19px 20px;border:1px solid #ddd;background-color:#fff}
+	#gnb .layer_location:after{content:"";position:absolute;right:10px;top:-50px;width:36px;height:50px;background:url(https://res.kurly.com/pc/ico/2011/ico_point_up_18x12.svg) no-repeat 50% 100%}
+	#gnb .layer_location *{font-weight:700;font-size:16px;color:#333;line-height:24px;letter-spacing:-0.3px}
+	#gnb .layer_location .delivery{display:block;padding-top:8px;font-size:14px;line-height:20px}
+	#gnb .layer_location .star{color:#5f0080}
+	#gnb .layer_location .regular{color:#666}
+	#gnb .layer_location .none{color:#999}
+	#gnb .layer_location .btn{display:block;width:100%;height:36px;margin-top:17px;padding-bottom:2px;border-radius:3px;font-size:12px;line-height:32px;letter-spacing:0;text-align:center}
+	#gnb .layer_location a.btn{padding-top:0}
+	#gnb .layer_location .btn.default{border:1px solid #5f0080;background-color:#fff;color:#5f0080}
+	#gnb .layer_location .btn.active{border:1px solid #5f0081;background-color:#5f0080;color:#fff}
+	#gnb .layer_location .btn .ico{display:inline-block;width:20px;height:20px;margin:6px 0 0 -6px;background:url(https://res.kurly.com/pc/ico/2008/ico_search_40x40.png) no-repeat 50% 50%;background-size:20px 20px;vertical-align:top}
+	#gnb .layer_location .group_button{display:block;overflow:hidden}
+	#gnb .layer_location .double .default{float:left;width:104px}
+	#gnb .layer_location .double .active{float:right;width:158px}
+	#gnb .layer_location .emph{color:#5f0080}
+	#gnb .location_set:hover .btn_location.on{background-image:url(https://res.kurly.com/pc/ico/2010/ico_delivery_setting_on.svg)}
+	#gnb .location_set.show .layer_location,
+	#gnb .location_set:hover .layer_location{display:block}
+	#gnb .location_set .btn_location.off,
+	#gnb .location_set .btn_location.off:hover{background-image:url(https://res.kurly.com/pc/ico/2008/ico_delivery_off.svg?ver=1);cursor:default}
+	#gnb .location_set.off .layer_location,
+	#gnb .location_set.off:hover .layer_location{display:none}
+	.gnb_search .init{position:relative}
+	.gnb_search .init .btn_delete{overflow:hidden;position:absolute;left:170px;top:-36px;width:36px;height:36px;border:0 none;background:url(https://res.kurly.com/pc/ico/2010/ico_search_del.svg) no-repeat 50% 50%;background-size:12px 12px;font-size:0;line-height:0;text-indent:-9999px;opacity:0}
+	.gnb_search .init .btn_delete.on{opacity:1} 
+	.screen_out {
+	    display: block;
+	    overflow: hidden;
+	    position: absolute;
+	    left: -9999px;
+	    width: 1px;
+	    height: 1px;
+	    font-size: 0;
+	    line-height: 0;
+	    text-indent: -9999px;
+	}
+	h2 {
+	    display: block;
+	    font-size: 1.5em;
+	    margin-block-start: 0.83em;
+	    margin-block-end: 0.83em;
+	    margin-inline-start: 0px;
+	    margin-inline-end: 0px;
+	    font-weight: bold;
+	}
+	form {
+	    display: block;
+	    margin-top: 0em;
+	}
+	.gnb_search .init {
+	    position: relative;
+	}
+	.gnb_search .init .btn_delete {
+	    overflow: hidden;
+	    position: absolute;
+	    left: 170px;
+	    top: -36px;
+	    width: 36px;
+	    height: 36px;
+	    border: 0 none;
+	    background: url(https://res.kurly.com/pc/ico/2010/ico_search_del.svg) no-repeat 50% 50%;
+	    background-size: 12px 12px;
+	    font-size: 0;
+	    line-height: 0;
+	    text-indent: -9999px;
+	    opacity: 0;
+	} 
+
+
+/*/////////body 속성////////*/
+	body, input, select, textarea, button {
+	    font-family: noto sans,malgun gothic,AppleGothic,dotum;
+	    line-height: 1;
+	    letter-spacing: -.05em;
+	    color: #4c4c4c;
+	    font-size: 12px;
+	    max-width: 100%;
+	} 
+	body {
+	    margin: 0;
+	}
+	body {
+	    display: block;
+	    margin: 8px;
+	}
+
+/*#wrap*/
+	div, th, td, li, dt, dd, p {
+	    word-break: break-all;
+	    margin:0 auto;
+	}
+
+/*#container*/
+	#header, #container, #content {
+	    position: relative;
+	}
+/*#main*/
+	#main {
+	    border-bottom: 1px solid #f7f7f7;
+	}
+/*content*/
+	#content {
+	    min-width: 1050px; 
+	    width:100%; 
+	    padding-bottom: 120px;
+	}
+/*#qnb(오른쪽 스크롤)*/ 
+	#qnb {
+	    position: absolute;
+	    z-index: 1;
+	    right: 20px;
+	    top: 70px;
+	    width: 80px;
+	    font: normal 12px/16px "Noto Sans";
+	    color: #333;
+	    letter-spacing: -0.3px;
+	    transition: top 0.2s;
+	}
+    .goods-goods_view #qnb{top:20px}
+/* 배너 */
+    #qnb .bnr_qnb{padding-bottom:7px}
+    #qnb .bnr_qnb .thumb{width:80px;height:120px;vertical-align:top}
+/* 메뉴 */    
+    #qnb .side_menu{width:80px;border:1px solid #ddd;border-top:0 none;background-color:#fff}
+    #qnb .link_menu{display:block;height:29px;padding-top:5px;border-top:1px solid #ddd;text-align:center}
+    #qnb .link_menu:hover,
+    #qnb .link_menu.on{color:#5f0080}
+/* 최근본상품 */
+    #qnb .side_recent{position:relative;margin-top:6px;border:1px solid #ddd;background-color:#fff}
+    #qnb .side_recent .tit{display:block;padding:22px 0 6px;text-align:center}
+    #qnb .side_recent .list_goods{overflow:hidden;position:relative;width:60px;margin:0 auto}
+    #qnb .side_recent .list{position:absolute;left:0;top:0}
+    #qnb .side_recent .link_goods{display:block;overflow:hidden;width:60px;height:80px;padding:1px 0 2px}
+    #qnb .side_recent .btn{display:block;overflow:hidden;width:100%;height:17px;border:0 none;font-size:0;line-height:0;text-indent:-9999px}
+    
+    #qnb .side_recent .btn_up{position:absolute;left:0;top:0;background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_up_hover.png) no-repeat 50% 50%}
+    #qnb .side_recent .btn_up.off{background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_up.png) no-repeat 50% 50%}
+    #qnb .side_recent .btn_down{background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_down_hover.png) no-repeat 50% 0}
+    #qnb .side_recent .btn_down.off{background:url(https://res.kurly.com/pc/service/main/2002/ico_quick_down.png) no-repeat 50% 0}
+    
+    
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5),
+    only screen and (min-resolution: 1.5dppx) {
+        #qnb .side_recent .btn_up{background-image:url(https://res.kurly.com/pc/service/main/2002/ico_quick_up_hover_x2.png);background-size:12px 18px}
+        #qnb .side_recent .btn_down{background-image:url(https://res.kurly.com/pc/service/main/2002/ico_quick_down_hover_x2.png);background-size:12px 18px}
+        #qnb .side_recent .btn_up.off{background-image:url(https://res.kurly.com/pc/service/main/2002/ico_quick_up_x2.png);background-size:12px 18px}
+        #qnb .side_recent .btn_down.off{background-image:url(https://res.kurly.com/pc/service/main/2002/ico_quick_down_x2.png);background-size:12px 18px}
+    }
+    @media all and (max-width: 1250px){
+        #qnb{display:none}
+    }
+
+/*///////본문 메인///////*/
+	a {
+	    background-color: transparent;
+	    text-decoration: none; 
+	    color: inherit;
+	}
+	a:-webkit-any-link {
+	    color: -webkit-link;
+	    cursor: pointer;
+	    
+	}
+	li {
+	    display: list-item;
+	    text-align: -webkit-match-parent;
+	}
+	.page_aticle { /*본문 전체*/
+	    width: 1050px;
+	    margin: 0 auto;
+	}
+	.page_aticle .layout-pagination { /*본문 하단 페이지 넘기기*/
+	    font-size: 0;
+	}
+	.layout-pagination { /*본문 하단 페이지 넘기기*/
+	    margin: 60px 0 0;
+	    text-align: center;
+	}
+	.page_aticle .layout-pagination-first-page:first-child {
+	    border-left: 1px solid #ddd;
+	}
+	.page_aticle .layout-pagination-button:first-child {
+	    border-left: 0;
+	}
+	.page_aticle .layout-pagination a {
+	    cursor: pointer;
+	}
+	.page_aticle .layout-pagination a, .page_aticle .layout-pagination strong {
+	    font-weight: 700;
+	    font-size: 12px;
+	}
+	.layout-pagination-button:first-child {
+	    border-left: 1px solid #ddd;
+	}
+	.layout-pagination-prev-page {
+	    background-image: url(https://res.kurly.com/pc/etc/old/images/common/icon-pagination-prev.png);
+	}
+	.layout-pagination-first-page, .layout-pagination-prev-page, .layout-pagination-next-page, .layout-pagination-last-page {
+	    background-repeat: no-repeat;
+	    background-position: 50% 50%;
+	    text-indent: -9999px;
+	}
+	.layout-pagination-button {
+	    display: inline-block;
+	    width: 34px;
+	    height: 34px;
+	    border: 1px solid #ddd;
+	    border-left: 0;
+	    vertical-align: top;
+	}
+	.layout-pagination-number:hover, .layout-pagination-number.__active {
+	    background-color: #f7f7f7;
+	    color: #5f0080;
+	}
+	.page_aticle .layout-pagination a {
+	    cursor: pointer;
+	}
+	.bg_loading {
+	    position: fixed;
+	    z-index: 9998;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	    background-color: #000;
+	    opacity: .5;
+	}
+	.loading_show {
+	    position: fixed;
+	    z-index: 10000;
+	    top: 50%;
+	    left: 50%;
+	    margin: -16px 0 0 -16px;
+	    width: 32px;
+	    height: 32px;
+	    background: url(https://res.kurly.com/pc/img/1909/img_loading_128x128.gif) no-repeat 50% 50%;
+	    background-size: 16px 16px;
+	} 
+/*이미지*/
+	img {
+	    border: 0;
+	}
+	img, video, canvas {
+	    max-width: 100%;
+	}
+/*side menu(오른쪽 스크롤-레시피,..)*/
+	b, strong {
+	    font-weight: 700;
+	}
+	#qnb .side_recent .link_goods {
+	    display: block;
+	    overflow: hidden;
+	    width: 60px;
+	    height: 80px;
+	    padding: 1px 0 2px;
+	}
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, only screen and (min-resolution: 1.5dppx){
+	#qnb .side_recent .btn_up.off {
+	    background-image: url(https://res.kurly.com/pc/service/main/2002/ico_quick_up_x2.png);
+	    background-size: 12px 18px;
+	}
+	}
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, only screen and (min-resolution: 1.5dppx){
+	#qnb .side_recent .btn_up {
+	    background-image: url(https://res.kurly.com/pc/service/main/2002/ico_quick_up_hover_x2.png);
+	    background-size: 12px 18px;
+	}
+	}
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, only screen and (min-resolution: 1.5dppx){
+	#qnb .side_recent .btn_down {
+	    background-image: url(https://res.kurly.com/pc/service/main/2002/ico_quick_down_hover_x2.png);
+	    background-size: 12px 18px;
+	}
+	}
+/*page_aticle 상단*/
+	#lnbMenu { /*본문 상단*/
+	    padding-top: 26px;
+	}
+	.page_aticle button, .page_aticle input, 
+	.page_aticle select, .page_aticle * {
+	    font-family: noto sans;
+	    font-weight: 400;
+	    letter-spacing: 0;
+	}
+	#bnrCategory { /*본문 상단-전체보기~신상품 부분*/
+	    display: none;
+	    position: relative;
+	    margin: 0 auto 20px;
+	}
+	#lnbMenu .inner_lnb { /*신상품 라인 + 전체보기 라인*/
+	    position: relative;
+	    padding-left: 29px;
+	    width:1050px;
+	}
+	#lnbMenu .ico_cate { /*신상품 라인*/
+	    overflow: hidden;
+	    width: 100%;
+	    height: 50px;
+	    padding-bottom: 10px;
+	}
+	#lnbMenu .ico_cate .ico { /*물건정렬-신상품*/
+	    display: none;
+	    overflow: hidden;
+	    float: left;
+	    width: 40px;
+	    height: 40px;
+	}
+	#lnbMenu .ico_cate .ico img { /*물건정렬-신상품의 아이콘*/
+	    width: 40px;
+	    height: 40px;
+	    vertical-align: top;
+	}
+	#lnbMenu .ico_cate .tit { /*왼쪽 상단 '신상품'*/
+	    float: left;
+	    padding: 20px 0 0 4px;
+	    font-size: 14px;
+	    line-height: 18px;
+	    font-weight: 700;
+	    color: #000;
+	    letter-spacing: -.3px;
+	}
+	#lnbMenu .list { /*상단 전체보기 라인*/
+	    overflow: hidden;
+	    width: 870px;
+	}
+	ol,ul { /*상단 전체보기 부분*/ 
+		list-style-type:none; 
+	}
+	#lnbMenu li {
+	    float: left;
+	}
+	#lnbMenu li a:hover, #lnbMenu li .on {
+	    font-weight: 700;
+	    color: #5f0080;
+	}
+	#lnbMenu li a {
+	    overflow: hidden;
+	    float: left;
+	    padding: 0 13px 7px 12px;
+	    border-bottom: 1px solid #ddd;
+	    line-height: 20px;
+	    font-size: 12px;
+	    color: #333;
+	    letter-spacing: -.3px;
+	    cursor: pointer;
+	}
+	#lnbMenu li.bg { /*전체보기 밑 밑줄*/
+	    position: absolute;
+	    top: 78px;
+	    height: 1px;
+	    margin-top: -1px;
+	    background-color: #334858;
+	}
+/*goodsList (물품 12개)*/
+	#goodList {
+		width:1050px; 
+	}
+	#goodsList .list_ability {
+	    position: relative;
+	}
+/*물품 정렬기준(신상순,혜택순,..)*/
+	#goodsList .sort_menu {
+	    position: absolute;
+	    right: 0;
+	    top: -33px;
+	    right:100px;
+	    padding: 0 10px;
+	}
+	#goodsList .sort_menu .user_sort {
+	    float: right;
+	    width: 130px;
+	    padding-right: 30px;
+	}
+	#goodsList .sort_menu .select_type {
+	    position: relative;
+	    z-index: 1;
+	    height: 44px;
+	}
+	#goodsList .sort_menu .user_sort .name_select {
+	    padding: 8px 13px 13px 0;
+	    font-size: 12px;
+	    text-align: right;
+	    cursor: pointer;
+	}
+	#goodsList .sort_menu .name_select {
+	    display: block;
+	    overflow: hidden;
+	    padding: 13px 0 13px 10px;
+	    font-size: 14px;
+	    color: #333;
+	}
+	#goodsList .sort_menu .name_select:after {
+	    content: "";
+	    display: inline-block;
+	    width: 10px;
+	    height: 10px;
+	    margin-left: 6px;
+	    background: url(https://res.kurly.com/pc/service/common/1908/ico_arrow_down_20x20.png) no-repeat 50% 50%;
+	    background-size: 10px 10px;
+	    vertical-align: 0;
+	}
+	#goodsList .sort_menu .list {
+	    display: none;
+	    position: absolute;
+	    right: 30px;
+	    top: 36px;
+	    width: 98px;
+	    background-color: #fff;
+	    box-shadow: 0 2px 4px rgba(0,0,0,.3);
+	}
+	#goodsList .sort_menu .user_sort .list a {
+	    padding: 13px 18px 11px 0;
+	    font-size: 12px;
+	    color: #333;
+	    text-align: right;
+	    cursor: pointer;
+	}
+	#goodsList .sort_menu .list a {
+	    display: block;
+	    overflow: hidden;
+	    width: 106px;
+	    height: 44px;
+	    padding: 13px 0 11px 12px;
+	    font-size: 14px;
+	    color: #333;
+	    white-space: nowrap;
+	}
+	#goodsList .sort_menu .user_sort .list a.on, #goodsList .sort_menu .user_sort .list a:hover {
+	    color: #5f0080;
+	}
+	#goodsList .sort_menu:after {
+	    content: "";
+	    display: block;
+	    overflow: hidden;
+	    height: 0;
+	    clear: both;
+	}
+/*list_goods(물품들 나열)*/
+	#goodsList .list_goods {
+	    overflow: hidden;
+	    padding: 0 29px;
+	}
+	#goodsList .list_goods .inner_listgoods {
+	    overflow: hidden;
+	    width: 990px;
+	}
+	#goodsList .list_goods .list {
+	    overflow: hidden;
+	    width: 1008px;
+	}
+/*list(물품 하나하나-사진크기, 물품명 등)*/
+	#goodsList .list_goods .list { /*물품 12개 전체 포함*/
+	    overflow: hidden;
+	    width: 1008px;
+	}
+	#goodsList .list_goods li { /*물품 한개의 사진,제품명,가격,설명*/
+	    float: left;
+	    width: 336px;
+	    height: 643px;
+	    padding: 21px 28px 0 0;
+	    list-style:none; 
+	}
+	#goodsList .list_goods .item { /*물품 한개의 사진,제품명,가격,설명*/
+	    display: block;
+	    background-color: #fff;
+	    cursor: pointer;
+	}
+	#goodsList .list_goods .thumb { /*물품 사진*/
+	    display: block;
+	    position: relative;
+	    width: 308px;
+	    height: 396px;
+	    background-color: #f9f8f9;
+	}
+	#goodsList .list_goods .thumb .img {
+	    overflow: hidden;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	}
+	#goodsList .list_goods .thumb img {
+	    width: 100%;
+	    vertical-align: top;
+	    transition: all .5s ease-in-out;
+	}
+	#goodsList .list_goods .thumb .img:after {
+	    content: "";
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	    border: 1px solid rgba(0,0,0,.08);
+	}
+	#goodsList .list_goods .thumb .ico {
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    width: 66px;
+	    height: 58px;
+	}
+	#goodsList .list_goods .thumb .ico img {
+	    width: 66px;
+	    height: 58px;
+	}
+	.global_sticker {
+	    position: relative;
+	    z-index: 2;
+	}
+	.global_sticker .inner_sticker {
+	    overflow: hidden;
+	    position: absolute;
+	    left: -1px;
+	    top: -1px;
+	    height: 32px;
+	    padding: 0 8px;
+	    text-align: center;
+	    white-space: nowrap;
+	}
+	.global_sticker .bg_sticker {
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 32px;
+	    background-color: #bd76ff;
+	    opacity: .9;
+	}
+	.global_sticker .txt_sticker {
+	    position: relative;
+	    font-weight: 400;
+	    font-size: 14px;
+	    color: #fff;
+	    line-height: 32px;
+	}
+	.global_sticker .emph_sticker {
+	    font-weight: 800;
+	    font-size: 14px;
+	    color: #fff;
+	    line-height: 32px;
+	}
+/*group_button(장바구니 버튼)*/
+	#goodsList .list_goods .thumb .group_btn {
+	    position: absolute;
+	    right: 15px;
+	    bottom: 15px;
+	    width: 45px;
+	}
+	.group_btn {
+	    overflow: hidden;
+	    width: 100%;
+	    text-align: center;
+	}
+	#goodsList .list_goods .thumb .btn_cart {
+	    background: url(https://res.kurly.com/pc/ico/2010/ico_cart.svg) no-repeat 50% 50%;
+	    background-size: 45px 45px;
+	}
+	#goodsList .list_goods .thumb .btn {
+	    display: block;
+	    width: 45px;
+	    height: 45px;
+	    margin-top: 15px;
+	    border: 0;
+	}
+	.group_btn .btn {
+	    overflow: hidden;
+	    float: left;
+	    width: 150px;
+	    height: 42px;
+	    font-size: 13px;
+	    line-height: 40px;
+	    text-align: center;
+	}
+	.screen_out {
+	    display: block;
+	    overflow: hidden;
+	    position: absolute;
+	    left: -9999px;
+	    width: 1px;
+	    height: 1px;
+	    font-size: 0;
+	    line-height: 0;
+	    text-indent: -9999px;
+	}
+/*물품 정보(물품명,가격,요약설명)*/
+	#goodsList .list_goods .info {
+	    display: block;
+	    padding: 14px 0 10px;
+	}
+	#goodsList .list_goods .name { /*물품명*/
+	    display: block;
+	    overflow: hidden;
+	    max-height: 58px;
+	    font-weight: 700;
+	    font-size: 20px;
+	    color: #333;
+	    line-height: 29px;
+	    display: -webkit-box;
+	    -webkit-line-clamp: 2;
+	    -webkit-box-orient: vertical;
+	    word-wrap: break-word;
+	}
+	#goodsList .list_goods .cost { /*물품 가격*/
+	    display: block;
+	    padding-top: 7px;
+	    font-size: 18px;
+	    line-height: 29px;
+	}
+	#goodsList .list_goods .cost .price { /*세일가*/
+	    font-weight: 700;
+	    color: #333;
+	}
+	#goodsList .list_goods .cost .original { /*원래가격*/
+	    display: block;
+	    font-size: 16px;
+	    color: #999;
+	    text-decoration: line-through;
+	}
+	#goodsList .list_goods .desc { /*물품 간단 설명*/
+	    display: block;
+	    padding-top: 8px;
+	    font-size: 13px;
+	    color: #666;
+	    line-height: 19px;
+	}
+	#goodsList .list_goods .tag {
+	    display: block;
+	    padding: 12px 10px 10px 0;
+	    cursor: default;
+	}
+	#goodsList .list_goods .tag .ico {
+	    display: inline-block;
+	    height: 22px;
+	    margin-right: 6px;
+	    padding: 0 8px;
+	    border-radius: 4px;
+	    background-color: #f3f3f3;
+	    font-weight: 700;
+	    font-size: 12px;
+	    color: #666;
+	    line-height: 22px;
+	    vertical-align: middle;
+	}
+/*하단에 페이지 넘김 버튼*/
+	.layout-pagination-first-page {
+	    background-image: url(https://res.kurly.com/pc/etc/old/images/common/icon-pagination-first.png);
+	}
+	.layout-pagination-next-page {
+	    background-image: url(https://res.kurly.com/pc/etc/old/images/common/icon-pagination-next.png);
+	}
+	.layout-pagination-last-page {
+	    background-image: url(https://res.kurly.com/pc/etc/old/images/common/icon-pagination-last.png);
+	}
+</style>
+</head>
+
+<body class="goods-goods_list" oncontextmenu="return false" ondragstart="return false">
+<div id="wrap" class="">
+<div id="pos_controll"></div>
+<div id="container">
+	<div id="header">
+		<div class="bnr_header" id="top-message">
+			<a href="https://www.kurly.com/shop/event/kurlyEvent.php?htmid=event/join/join_210113" id="eventLanding">
+				지금 가입하고 인기상품 <b>100원</b>에 받아가세요!
+				<img src="https://res.kurly.com/pc/ico/1908/ico_arrow_fff_84x84.png" class="bnr_arr">
+				<div class="bnr_top">
+					<div class="inner_top_close">
+						<button id="top-message-close" class="btn_top_bnr">가입하고 혜택받기</button>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div id="userMenu">
+			<ul class="list_menu">
+				<li class="menu none_sub menu_join">
+					<a href="/shop/member/join.php" class="link_menu">회원가입</a>
+				</li> 
+				<li class="menu none_sub">
+					<a href="/shop/member/login.php" class="link_menu">로그인</a> 
+					<!---->
+				</li> 
+				<!----> 
+				<li class="menu lst">
+					<a href="/shop/board/list.php?id=notice" class="link_menu">고객센터</a> 
+					<ul class="sub">
+						<li>
+							<a href="/shop/board/list.php?id=notice">공지사항</a>
+						</li> 
+						<li>
+							<a href="/shop/service/faq.php">자주하는 질문</a>
+						</li> 
+						<li>
+							<a href="/shop/mypage/mypage_qna.php">1:1 문의</a>
+						</li> 
+						<!----> 
+						<li>
+							<a href="/shop/mypage/offer.php">상품 제안</a>
+						</li> 
+						<li>
+							<a href="/shop/mypage/echo_packing.php">에코포장 피드백</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>	
+		<div id="headerLogo" class="layout-wrapper">
+			<h1 class="logo">
+				<a href="/" class="link_main">
+					<span id="gnbLogoContainer"></span>
+					<img src="https://res.kurly.com/images/marketkurly/logo/logo_x2.png" alt="마켓컬리 로고">
+				</a>
+			</h1>
+			<a href="/shop/board/view.php?id=notice&amp;no=64" onclick="ga('send','event','etc','main_gif_btn_click');" class="bnr_delivery">
+				<img src="https://res.kurly.com/pc/service/common/1908/delivery_190819.gif" alt="서울, 경기, 인천 샛별배송, 수도권 이외 지역 택배배송">
+			</a>
+		</div>
+		<div id="gnb" class="">
+			<h2 class="screen_out">메뉴</h2>
+			<div id="gnbMenu" class="gnb_kurly">
+				<div class="inner_gnbkurly">
+					<div class="gnb_main">
+						<ul class="gnb">
+							<li class="menu1">
+								<a href="#none">
+									<span class="ico"></span>
+									<span class="txt">전체 카테고리</span>
+								</a>
+							</li>
+							 <li>
+								<a href="/shop/goods/goods_list.php?category=038" class="link new on">
+									<span class="txt">신상품</span>
+								</a>
+							</li>
+							 <li>
+								<a href="/shop/goods/goods_list.php?category=029" class="link best ">
+									<span class="txt">베스트</span>
+								</a>
+							</li> 
+							<li>
+								<a href="/shop/goods/goods_list.php?list=sale" class="link bargain ">
+									<span class="txt">알뜰쇼핑</span>
+								</a>
+							</li> 
+							<li class="lst">
+								<a href="/shop/goods/event.php?&amp;" class="link event ">
+									<span class="txt">금주혜택</span>
+								</a>
+							</li>
+						</ul> 
+						<div id="side_search" class="gnb_search">
+							<form action="/shop/goods/goods_search.php?&amp;" onsubmit="return searchTracking(this)">
+								<input type="hidden" name="searched" value="Y"> 
+								<input type="hidden" name="log" value="1"> 
+								<input type="hidden" name="skey" value="all"> 
+								<input type="hidden" name="hid_pr_text" value=""> 
+								<input type="hidden" name="hid_link_url" value=""> 
+								<input type="hidden" id="edit" name="edit" value=""> 
+								<input name="sword" type="text" id="" value="" required="required" label="검색어" class="inp_search"> 
+								<input type="image" src="https://res.kurly.com/pc/service/common/1908/ico_search_x2.png" class="btn_search"> 
+								<div class="init">
+									<button type="button" id="searchInit" class="btn_delete">검색어 삭제하기</button>
+								</div>
+							</form>
+						</div> 
+						<div class="cart_count">
+							<div class="inner_cartcount">
+								<a href="/shop/goods/goods_cart.php" class="btn_cart">
+									<span class="screen_out">장바구니</span> 
+									<span id="cart_item_count" class="num realtime_cartcount" style="display: none;"></span>
+								</a>
+							</div> 
+							<div id="addMsgCart" class="msg_cart">
+								<span class="point"></span> 
+								<div class="inner_msgcart">
+									<img src="https://res.kurly.com/images/common/bg_1_1.gif" alt="" class="thumb"> 
+									<p id="msgReaddedItem" class="desc"><span class="tit"></span> 
+									<span class="txt">
+										장바구니에 상품을 담았습니다.
+										<span class="repeat">이미 담으신 상품이 있어 추가되었습니다.</span>
+									</span>
+									</p>
+								</div>
+							</div>
+						</div> 
+						<div class="location_set">
+							<button type="button" class="btn_location on">배송지 설정하기</button> 
+								<div class="layer_location">
+								<div class="no_address">        
+									<span class="emph">배송지를 등록</span>
+									하고
+									<br>        
+									구매 가능한 상품을 확인하세요!        
+									<div class="group_button double">          
+										<button type="button" class="btn default login">로그인</button>        
+										<button type="button" class="btn active searchAddress">
+											<span class="ico"></span>
+											주소검색
+										</button>        
+									</div>      
+								</div>
+							</div>
+						</div>
+					</div> 
+				<div class="gnb_sub">
+					<div class="inner_sub">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="main">
+		<div id="content">
+			<div id="qnb" class="quick-navigation" style="top: 70px;">
+				<div class="bnr_qnb" id="brnQuick">
+					<a href="https://www.kurly.com/shop/event/kurlyEvent.php?htmid=event/2020/1231/newyearsday" id="brnQuickObj">
+						<img class="thumb" src="https://res.kurly.com/pc/service/main/2101/bnr_quick.png">
+					</a>
+				</div> <!-- bnr_qnb :스크롤바 혜택 끝 -->
+				<div class="side_menu">
+					<a href="https://www.kurly.com/shop/main/html.php?htmid=event/kurly.htm&name=lovers" class="link_menu">등급별 혜택</a>
+					<a href="https://www.kurly.com/shop/board/list.php?id=recipe" class="link_menu">레시피</a>
+					<a href="https://www.kurly.com/shop/goods/goods_review_best.php" class="link_menu">베스트 후기</a>
+				</div><!-- side_menu 끝(혜택,레시피,베스트후기) -->
+				<div class="side_recent" style="display:none">
+					<strong class="tit">최근 본 상품</strong>
+					<div class="list_goods" data-height="209" style="height: 0px">
+						<ul class="list"></ul>
+					</div><!--  -->
+					<button type="button" class="btn btn_up off">최근 본 상품 위로 올리기</button>
+					<button type="button" class="btn btn_down off">최근 본 상품 아래로 내리기</button>
+				</div><!-- side_recent 끝 (최근 본 상품) -->
+			</div> <!-- qnb : 우측 스크롤바 끝 -->
+			<div class="page_article">
+				<div id="lnbMenu" class="lnb_menu">
+					<div id="bnrCategory" class="bnr_category" style>
+						<div class="thumb">
+							<img src="" alt="카테고리배너">
+						</div> <!-- thumb 끝 -->
+					</div> <!-- bnrCategory 끝 -->
+					<div class="inner_lnb">
+						<div class="ico_cate">
+							<span class="ico">
+								<img src="" id="goodsListIconView" alt="카테고리 아이콘">
+							</span>
+							<span class="tit">신상품</span>
+						</div> <!-- ico_cate 끝 (신상품)-->
+						<ul class="list">
+							<li data-start="17" data-end="77">
+								<a class="on">전체보기</a>
+							</li>
+							<li class="bg" style="top:78px; width:69px; left:29px; opacity:1;"></li>
+						</ul> <!-- list 끝 (전체보기) -->
+					</div><!-- inner_lnb 끝 -->
+				</div> <!-- lnbMenu 끝 (신상품, 전체보기) -->
+				
+				<div id="goodsList" class="page_section section_goodslist">
+					<div class="list_ability">
+						<div class="sort_menu">
+							<div class="">
+								<div class="select_type user_sort">
+									<!--  -->
+									<a class="name_select">
+										신상품순
+									</a>
+									<!--  -->
+									<!--  -->
+									<!--  -->
+									<!--  -->
+									<ul class="list">
+										<li>
+											<a class="">추천순</a>
+										</li>
+										<li>
+											<a class="on">신상품순</a>
+										</li>
+										<li>
+											<a class="">인기상품순</a>
+										</li>
+										<li>
+											<a class="">혜택순</a>
+										</li>
+										<li>
+											<a class="">낮은 가격순</a>
+										</li>
+										<li>
+											<a class="">높은 가격 순</a>
+										</li>
+									</ul> <!-- list끝 (정렬기준) -->
+								</div><!-- select_type, user_sort 끝 -->
+							</div>
+						</div>
+					</div><!-- list_ability 끝 -->
+					<div class="list_goods">
+						<div class="inner_listgoods">
+							<ul class="list">
+								<li>
+									<div class="item">
+										<div class="thumb">
+											<a class="img" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1610516543724l0.jpg&quot;);">
+												<!----> 
+												<img src="https://img-cf.kurly.com/shop/data/goods/1610516543724l0.jpg" alt="합리적인 가격대의  스페인 옥수수 오일 " onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+											</a> 
+											<!----> 
+											<span class="global_sticker" style="display: none;">
+												<span class="inner_sticker">
+													<span class="bg_sticker"></span> 
+													<span class="txt_sticker">
+														<span class="emph_sticker">1+2</span> 
+														이벤트
+													</span>
+												</span>
+											</span> 
+											<!----> 
+											<div class="group_btn">
+												<button type="button" class="btn btn_cart">
+													<span class="screen_out">54987</span>
+												</button> 
+												<!----> 
+												<!---->
+											</div>
+										</div> 
+										<a class="info">
+											<span class="name">                    [에이브릴]  스페인 옥수수 오일 1L                </span> 
+											<span class="cost">
+												<span class="price">4,980원</span> 
+												<!---->
+											</span> 
+											<span class="desc">합리적인 가격대의  스페인 옥수수 오일 
+											</span> 
+											<span class="tag">
+												<span class="ico limit">Kurly only</span>
+											</span>
+										</a>
+									</div> 
+								</li> <!-- 상품1 -->	
+								<li>
+									<div class="item">
+										<div class="thumb">
+											<a class="img" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1609898742324l0.jpg&quot;);">
+												<!----> 
+												<img src="https://img-cf.kurly.com/shop/data/goods/1609898742324l0.jpg" alt="한 입에 쏙, 원조 치킨 맛 스낵" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+											</a> 
+											<!----> 
+										
+											<span class="global_sticker" style="display: none;">
+												<span class="inner_sticker">
+													<span class="bg_sticker"></span> 
+													<span class="txt_sticker">
+														<span class="emph_sticker">1+2</span> 
+														이벤트
+													</span>
+												</span>
+											</span> 
+											<!----> 
+											<div class="group_btn">
+												<button type="button" class="btn btn_cart">
+													<span class="screen_out">65408</span>
+												</button> 
+												<!----> 
+												<!---->
+											</div>
+										</div> 
+										<a class="info">
+											<span class="name">                    [농심]  닭다리후라이드 66g                </span> 
+											<span class="cost">
+												<span class="price">1,200원</span> 
+												<!---->
+											</span> 
+											<span class="desc">한 입에 쏙, 원조 치킨 맛 스낵 
+											</span> 
+											<span class="tag">
+												<span class="ico limit">Kurly only</span>
+											</span>
+										</a>
+									</div> 
+								</li> <!-- 상품2 -->	
+								<li>
+									<div class="item">
+										<div class="thumb">
+											<a class="img" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1608623500341l0.jpg&quot;);">
+												<!----> 
+												<img src="https://img-cf.kurly.com/shop/data/goods/1608623500341l0.jpg" alt="취향따라 즐기는 든든한 식사빵" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+											</a> 
+											<!----> 
+											<span class="global_sticker" style="display: none;">
+												<span class="inner_sticker">
+													<span class="bg_sticker"></span> 
+													<span class="txt_sticker">
+														<span class="emph_sticker">1+2</span> 
+														이벤트
+													</span>
+												</span>
+											</span> 
+											<!----> 
+											<div class="group_btn">
+												<button type="button" class="btn btn_cart">
+													<span class="screen_out">63095</span>
+												</button> 
+												<!----> 
+												<!---->
+											</div>
+										</div> 
+										<a class="info">
+											<span class="name">                    [곤크랑 쉐리에]  치아바타 3종                </span> 
+											<span class="cost">
+												<span class="price">3,000원</span> 
+												<!---->
+											</span> 
+											<span class="desc">취향따라 즐기는 든든한 식사빵 
+											</span> 
+											<span class="tag">
+												<span class="ico limit">Kurly only</span>
+											</span>
+										</a>
+									</div> 
+								</li> <!-- 상품3 -->		
+								<li>
+									<div class="item">
+										<div class="thumb">
+											<a class="img" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1610587940404l0.jpg&quot;);">
+												<!----> 
+												<img src="https://img-cf.kurly.com/shop/data/goods/1610587940404l0.jpg" alt="하와이에서 날아온 견과류 스낵" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+											</a> 
+											<!----> 
+											<span class="global_sticker" style="display: none;">
+												<span class="inner_sticker">
+													<span class="bg_sticker"></span> 
+													<span class="txt_sticker">
+														<span class="emph_sticker">1+2</span> 
+														이벤트
+													</span>
+												</span>
+											</span> 
+											<!----> 
+											<div class="group_btn">
+												<button type="button" class="btn btn_cart">
+													<span class="screen_out">9502</span>
+												</button> 
+												<!----> 
+												<!---->
+											</div>
+										</div> 
+										<a class="info">
+											<span class="name">                    [마우나로아] 마카다미아 스낵 7종                </span> 
+											<span class="cost">
+												<span class="price">12,200원</span> 
+												<!---->
+											</span> 
+											<span class="desc">하와이에서 날아온 견과류 스낵 
+											</span> 
+											<span class="tag">
+												<span class="ico limit">Kurly only</span>
+											</span>
+										</a>
+									</div> 
+								</li> <!-- 상품4 -->
+								<li>
+									<div class="item">
+										<div class="thumb">
+											<a class="img" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1610604963660l0.jpg&quot;);">
+												<!----> 
+												<img src="https://img-cf.kurly.com/shop/data/goods/1610604963660l0.jpg" alt="향긋한 송이가 주는 근사한 풍미" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+											</a> 
+											<!----> 
+											<span class="global_sticker" style="display: none;">
+												<span class="inner_sticker">
+													<span class="bg_sticker"></span> 
+													<span class="txt_sticker">
+														<span class="emph_sticker">1+2</span> 
+														이벤트
+													</span>
+												</span>
+											</span> 
+											<!----> 
+											<div class="group_btn">
+												<button type="button" class="btn btn_cart">
+													<span class="screen_out">63936</span>
+												</button> 
+												<!----> 
+												<!---->
+											</div>
+										</div> 
+										<a class="info">
+											<span class="name">                    [씨뜰리에] 강원도 송이버섯 밥간장                </span> 
+											<span class="cost">
+												<span class="price">5,900원</span> 
+												<!---->
+											</span> 
+											<span class="desc">향긋한 송이가 주는 근사한 풍미
+											</span> 
+											<span class="tag">
+												<span class="ico limit">Kurly only</span>
+											</span>
+										</a>
+									</div> 
+								</li> <!-- 상품5 -->
+								<li>
+									<div class="item">
+										<div class="thumb">
+											<a class="img" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1610672837938l0.jpg&quot;);">
+												<!----> 
+												<img src="https://img-cf.kurly.com/shop/data/goods/1610672837938l0.jpg" alt="손쉽게 완성하는 명절 상차림" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+											</a> 
+											<!----> 
+											<span class="global_sticker" style="display: none;">
+												<span class="inner_sticker">
+													<span class="bg_sticker"></span> 
+													<span class="txt_sticker">
+														<span class="emph_sticker">1+2</span> 
+														이벤트
+													</span>
+												</span>
+											</span> 
+											<!----> 
+											<div class="group_btn">
+												<button type="button" class="btn btn_cart">
+													<span class="screen_out">9502</span>
+												</button> 
+												<!----> 
+												<!---->
+											</div>
+										</div> 
+										<a class="info">
+											<span class="name">                    [마마리] 설 맞이 상차림 세트 (2/11 목 수령)                </span> 
+											<span class="cost">
+												<span class="price">80,000원</span> 
+												<!---->
+											</span> 
+											<span class="desc">손쉽게 완성하는 명절 상차림 
+											</span> 
+											<span class="tag">
+												<span class="ico limit">Kurly only</span>
+											</span>
+										</a>
+									</div> 
+								</li> <!-- 상품6 -->	
+								<li>
+									<div class="item">
+										<div class="thumb">
+											<a class="img" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1610599296741l0.jpg&quot;);">
+												<!----> 
+												<img src="https://img-cf.kurly.com/shop/data/goods/1610599296741l0.jpg" alt="고소한 밤맛 가득 미니 사이즈 만쥬" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+											</a> 
+											<!----> 
+											<span class="global_sticker" style="display: none;">
+												<span class="inner_sticker">
+													<span class="bg_sticker"></span> 
+													<span class="txt_sticker">
+														<span class="emph_sticker">1+2</span> 
+														이벤트
+													</span>
+												</span>
+											</span> 
+											<!----> 
+											<div class="group_btn">
+												<button type="button" class="btn btn_cart">
+													<span class="screen_out">65810</span>
+												</button> 
+												<!----> 
+												<!---->
+											</div>
+										</div> 
+										<a class="info">
+											<span class="name">                    [삼립] 전통밤만쥬(30개입)                </span> 
+											<span class="cost">
+												<span class="price">6,500원</span> 
+												<!---->
+											</span> 
+											<span class="desc">고소한 밤맛 가득 미니 사이즈 만쥬 
+											</span> 
+											<span class="tag">
+												<span class="ico limit">Kurly only</span>
+											</span>
+										</a>
+									</div> 
+								</li> <!-- 상품7 -->
+								<li>
+									<div class="item">
+										<div class="thumb">
+											<a class="img" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1610607279561l0.jpg&quot;);">
+												<!----> 
+												<img src="https://img-cf.kurly.com/shop/data/goods/1610607279561l0.jpg" alt="미니 케이크의 풍성한 매력" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+											</a> 
+											<!----> 
+											<span class="global_sticker" style="display: none;">
+												<span class="inner_sticker">
+													<span class="bg_sticker"></span> 
+													<span class="txt_sticker">
+														<span class="emph_sticker">1+2</span> 
+														이벤트
+													</span>
+												</span>
+											</span> 
+											<!----> 
+											<div class="group_btn">
+												<button type="button" class="btn btn_cart">
+													<span class="screen_out">63770</span>
+												</button> 
+												<!----> 
+												<!---->
+											</div>
+										</div> 
+										<a class="info">
+											<span class="name">                    [Traiteur de Paris] 프랑스 치즈 케이크                </span> 
+											<span class="cost">
+												<span class="price">6,800원</span> 
+												<!---->
+											</span> 
+											<span class="desc">미니 케이크의 풍성한 매력 
+											</span> 
+											<span class="tag">
+												<span class="ico limit">Kurly only</span>
+											</span>
+										</a>
+									</div> 
+								</li> <!-- 상품8 -->
+								<li>
+									<div class="item">
+										<div class="thumb">
+											<a class="img" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1610607209787l0.jpg&quot;);">
+												<!----> 
+												<img src="https://img-cf.kurly.com/shop/data/goods/1610607209787l0.jpg" alt="스팀으로 쪄 더 부드러운!" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+											</a> 
+											<!----> 
+											<span class="global_sticker" style="display: none;">
+												<span class="inner_sticker">
+													<span class="bg_sticker"></span> 
+													<span class="txt_sticker">
+														<span class="emph_sticker">1+2</span> 
+														이벤트
+													</span>
+												</span>
+											</span> 
+											<!----> 
+											<div class="group_btn">
+												<button type="button" class="btn btn_cart">
+													<span class="screen_out">64253</span>
+												</button> 
+												<!----> 
+												<!---->
+											</div>
+										</div> 
+										<a class="info">
+											<span class="name">                    [탄단지] 스팀오븐 닭가슴살 3종                </span> 
+											<span class="cost">
+												<span class="price">1,650원</span> 
+												<!---->
+											</span> 
+											<span class="desc">스팀으로 쪄 더 부드러운! 
+											</span> 
+											<span class="tag">
+												<span class="ico limit">Kurly only</span>
+											</span>
+										</a>
+									</div> 
+								</li> <!-- 상품9 -->	
+								<li>
+									<div class="item">
+										<div class="thumb">
+											<a class="img" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1610591374479l0.jpg&quot;);">
+												<!----> 
+												<img src="https://img-cf.kurly.com/shop/data/goods/1610591374479l0.jpg" alt="고소한 굴과 크림소스의 만남" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+											</a> 
+											<!----> 
+											<span class="global_sticker" style="display: none;">
+												<span class="inner_sticker">
+													<span class="bg_sticker"></span> 
+													<span class="txt_sticker">
+														<span class="emph_sticker">1+2</span> 
+														이벤트
+													</span>
+												</span>
+											</span> 
+											<!----> 
+											<div class="group_btn">
+												<button type="button" class="btn btn_cart">
+													<span class="screen_out">62332</span>
+												</button> 
+												<!----> 
+												<!---->
+											</div>
+										</div> 
+										<a class="info">
+											<span class="name">                    [삼삼물산X이태리식탁] 크림 굴 그라탕                </span> 
+											<span class="cost">
+												<span class="price">7,900원</span> 
+												<!---->
+											</span> 
+											<span class="desc">고소한 굴과 크림소스의 만남
+											</span> 
+											<span class="tag">
+												<span class="ico limit">Kurly only</span>
+											</span>
+										</a>
+									</div> 
+								</li> <!-- 상품10 -->						
+								<li>
+									<div class="item">
+										<div class="thumb">
+											<a class="img" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/1609813862738l0.jpg&quot;);">
+												<!----> 
+												<img src="https://img-cf.kurly.com/shop/data/goods/1609813862738l0.jpg" alt="감귤의 새콤달콤함을 그대로" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+											</a> 
+											<!----> 
+											<span class="global_sticker" style="display: none;">
+												<span class="inner_sticker">
+													<span class="bg_sticker"></span> 
+													<span class="txt_sticker">
+														<span class="emph_sticker">1+2</span> 
+														이벤트
+													</span>
+												</span>
+											</span> 
+											<span class="ico">
+												<img src="https://img-cf.kurly.com/shop/data/my_icon/icon_save_10.png" alt="SAVE 아이콘">
+											</span>											
+											<!----> 
+											<div class="group_btn">
+												<button type="button" class="btn btn_cart">
+													<span class="screen_out">63942</span>
+												</button> 
+												<!----> 
+												<!---->
+											</div>
+										</div> 
+										<a class="info">
+											<span class="name">                    [제주감성] 제주 감귤식초                </span> 
+											<span class="cost">
+												<span class="price">17,550원</span>
+												<span class="original">19,500원</span> 
+												<!---->
+											</span> 
+											<span class="desc">감귤의 새콤달콤함을 그대로
+											</span> 
+											<span class="tag">
+												<span class="ico limit">Kurly only</span>
+											</span>
+										</a>
+									</div> 
+								</li> <!-- 상품11 -->		
+								<li>
+									<div class="item">
+										<div class="thumb">
+											<a class="img" style="background-image: url(&quot;https://img-cf.kurly.com/shop/data/goods/161060162014l0.jpg&quot;);">
+												<!----> 
+												<img src="https://img-cf.kurly.com/shop/data/goods/161060162014l0.jpg" alt="비타민D까지 함유한" onerror="this.src='https://res.kurly.com/mobile/img/1808/img_none_x2.png'" width="308" height="396">
+											</a> 
+											<!----> 
+											<span class="ico">
+												<img src="https://img-cf.kurly.com/shop/data/my_icon/icon_save_55.png" alt="SAVE 아이콘">
+											</span>											
+											<span class="global_sticker" style="display: none;">
+												<span class="inner_sticker">
+													<span class="bg_sticker"></span> 
+													<span class="txt_sticker">
+														<span class="emph_sticker">1+2</span> 
+														이벤트
+													</span>
+												</span>
+											</span> 
+											<!----> 
+											<div class="group_btn">
+												<button type="button" class="btn btn_cart">
+													<span class="screen_out">65862</span>
+												</button> 
+												<!----> 
+												<!---->
+											</div>
+										</div> 
+										<a class="info">
+											<span class="name">                    [메이준뉴트리] 슈퍼 프로바이오틱스17 (30일분)                </span> 
+											<span class="cost">
+												<span class="price">4,500원</span> 
+												<span class="original">10,000원</span>
+												<!---->
+											</span> 
+											<span class="desc">비타민D까지 함유한
+											</span> 
+											<span class="tag">
+												<span class="ico limit">Kurly only</span>
+											</span>
+										</a>
+									</div> 
+								</li> <!-- 상품12 -->																																																																																																																							
+							</ul> <!-- 물품들 모음 -->
+						</div>
+					</div><!-- list_goods 끝 (물품나열부분 전체) -->
+					<div class="layout-pagination">
+						<div class="pagediv">
+							<a href="#main" class="layout-pagination-button layout-pagination-first-page">맨 처음 페이지로 가기</a>
+							<a href="#main" class="layout-pagination-button layout-pagination-prev-page">이전 페이지로 가기</a>
+							<span>
+								<!--  -->
+								<strong class="layout-pagination-button layout-pagination-number __active">1</strong>
+							</span>
+							<span>
+								<a class="layout-pagination-button layout-pagination-number">2</a>
+								<!--  -->
+							</span>
+							<span>
+								<a class="layout-pagination-button layout-pagination-number">3</a>
+								<!--  -->
+							</span>
+							<span>
+								<a class="layout-pagination-button layout-pagination-number">4</a>
+								<!--  -->
+							</span>
+							<a href="#main" class="layout-pagination-button layout-pagination-next-page">다음 페이지로 가기</a>
+							<a href="#main" class="layout-pagination-button layout-pagination-last-page">맨 끝 페이지로 가기</a>
+						</div>
+					</div> <!-- layout 끝 -->
+				</div> <!-- goodsList 끝 -->
+			</div><!-- page_article 끝 -->
+			<div class="bg_loading" id="bgLoading" style="display:none;">
+				<div class="loading_show"></div>
+			</div>
+		</div> <!-- content 끝 -->
+	</div> <!-- main 끝 -->
+</div>
+</div>
+</div>
+
+</body>
+
+
+</html>
